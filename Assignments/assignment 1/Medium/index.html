@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+    <section class="dashboard">
+      <header class="topbar">
+        <button class="icon-btn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <img
+          class="logo"
+          src="https://pngimg.com/uploads/pokemon_logo/pokemon_logo_PNG3.png"
+          alt="Pokémon logo"
+        />
+
+        <button class="icon-btn sun-btn" aria-label="Theme toggle">
+          <span class="sun-core"></span>
+          <span class="ray ray-1"></span>
+          <span class="ray ray-2"></span>
+          <span class="ray ray-3"></span>
+          <span class="ray ray-4"></span>
+          <span class="ray ray-5"></span>
+          <span class="ray ray-6"></span>
+          <span class="ray ray-7"></span>
+          <span class="ray ray-8"></span>
+        </button>
+      </header>
+
+      <section class="search-row">
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search for a Pokémon..." aria-label="Search for a Pokémon">
+        </div>
+
+        <div class="filters">
+          <button class="filter-pill">
+            <span>Filter by types (1)</span>
+            <span class="chevron">⌄</span>
+          </button>
+          <button class="sort-btn" aria-label="Sort">
+            <span class="sort-icon">⇅</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="cards">
+        <article class="poke-card green">
+          <div class="card-head">
+            <span class="dex">#0908</span>
+            <button class="fav-btn" aria-label="Favorite">
+              <span>♡</span>
+            </button>
+          </div>
+          <div class="pokemon-stage">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png" alt="Meowscarada">
+            <span class="leaf leaf-a"></span>
+            <span class="leaf leaf-b"></span>
+            <span class="leaf leaf-c"></span>
+          </div>
+          <h2>Meowscarada</h2>
+          <div class="card-footer">
+            <span class="type type-green">🍃 GRASS</span>
+            <button class="next-btn" aria-label="Open card">→</button>
+          </div>
+          <div class="card-accent"></div>
+        </article>
+
+        <article class="poke-card slate">
+          <div class="card-head">
+            <span class="dex">#0624</span>
+            <button class="fav-btn" aria-label="Favorite">
+              <span>♡</span>
+            </button>
+          </div>
+          <div class="pokemon-stage">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png" alt="Pawniard">
+          </div>
+          <h2>Pawniard</h2>
+          <div class="card-footer">
+            <span class="type type-slate">⬢ DARK / STEEL</span>
+            <button class="next-btn" aria-label="Open card">→</button>
+          </div>
+          <div class="card-accent slate-accent"></div>
+        </article>
+
+        <article class="poke-card orange">
+          <div class="card-head">
+            <span class="dex">#0229</span>
+            <button class="fav-btn" aria-label="Favorite">
+              <span>♡</span>
+            </button>
+          </div>
+          <div class="pokemon-stage">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png" alt="Houndoom">
+          </div>
+          <h2>Houndoom</h2>
+          <div class="card-footer">
+            <span class="type type-orange">🔥 DARK / FIRE</span>
+            <button class="next-btn" aria-label="Open card">→</button>
+          </div>
+          <div class="card-accent orange-accent"></div>
+        </article>
+
+        <article class="poke-card blue">
+          <div class="card-head">
+            <span class="dex">#0686</span>
+            <button class="fav-btn" aria-label="Favorite">
+              <span>♡</span>
+            </button>
+          </div>
+          <div class="pokemon-stage">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png" alt="Inkay">
+          </div>
+          <h2>Inkay</h2>
+          <div class="card-footer">
+            <span class="type type-blue">💧 DARK / PSYCHIC</span>
+            <button class="next-btn" aria-label="Open card">→</button>
+          </div>
+          <div class="card-accent blue-accent"></div>
+        </article>
+      </section>
+
+      <section class="feature-row">
+        <article class="feature">
+          <div class="feature-icon blue-icon">◉</div>
+          <div>
+            <h3>Explore</h3>
+            <p>Discover all your favorite Pokémon</p>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-icon green-icon">🍃</div>
+          <div>
+            <h3>Filter</h3>
+            <p>Find Pokémon by types and abilities</p>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-icon gold-icon">★</div>
+          <div>
+            <h3>Collection</h3>
+            <p>Save and manage your collection</p>
+          </div>
+        </article>
+        <article class="feature">
+          <div class="feature-icon purple-icon">☯</div>
+          <div>
+            <h3>Stats</h3>
+            <p>View stats and learn about Pokémon</p>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div class="ball-mark">◉</div>
+        <p>© 2024 Pokémon. All rights reserved.</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
