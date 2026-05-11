@@ -261,6 +261,16 @@ body {
   z-index: 3;
 }
 
+.hero-image {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: min(56vw, 580px);
+  max-width: none;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 28px 24px rgba(0, 0, 0, 0.28));
+}
+
 .halo {
   position: absolute;
   left: 80px;
@@ -517,6 +527,16 @@ body {
   background: rgba(8, 21, 22, 0.45);
   box-shadow: 0 0 18px rgba(44, 228, 192, 0.12);
   font-size: 22px;
+}
+
+.pill-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .feature-pill strong {
